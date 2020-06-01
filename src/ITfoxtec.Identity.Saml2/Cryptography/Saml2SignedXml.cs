@@ -50,7 +50,7 @@ namespace ITfoxtec.Identity.Saml2.Cryptography
                 throw new InvalidSignatureException("XML signature reference do not refer to the root element.");
             }
 
-            var canonicalizationMethodValid = SignedInfo.CanonicalizationMethod == XmlDsigExcC14NTransformUrl;
+            var canonicalizationMethodValid = SignedInfo.CanonicalizationMethod == XmlDsigExcC14NTransformUrl || SignedInfo.CanonicalizationMethod == XmlDsigExcC14NWithCommentsTransformUrl;
             var signatureMethodValid = SignedInfo.SignatureMethod == Saml2Signer.SignatureAlgorithm;
             if (!(canonicalizationMethodValid && signatureMethodValid))
             {
