@@ -17,7 +17,9 @@ Support message signing and validation (SHA1/SHA256/SHA384/SHA512) as well as en
 
 Support signing/encryption certificates in Azure Key Vault.
 
-Tested for compliance with AD FS, Azure AD and Azure AD B2C. Furthermore, the Danish OIOSAML 2.0 profile and NemLog-in is supported.</Description>
+Tested for compliance with AD FS, Azure AD and Azure AD B2C. Furthermore, the Danish OIOSAML 2.0 profile and NemLog-in is supported.
+
+This is a custom version built to support validation of xml signed with xml-exc-c14n#WithComments canonicalization method.</Description>
     <PackageTags>SAML SAML 2.0 SAML2.0 SAML2 SAML 2 SAML-P SAMLP SSO Identity Provider (IdP) Relying Party (RP) Authentication Metadata OIOSAML NemLog-in</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageIconUrl>https://itfoxtec.com/favicon.ico</PackageIconUrl>
